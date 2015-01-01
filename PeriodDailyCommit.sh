@@ -109,21 +109,27 @@ git_action() {
         #   git add .
         #   git commit -m "merge"
 
-          git pull
+        #   git pull
 
-          sleep 8s
+        #   sleep 8s
 
           random_commit_count=$(cm_randomInteger)
+
+          echo "执行了while 循环,随机数是$random_commit_count"
 
           for((i=0;i<$random_commit_count;i++)); do
             
             echo "$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))：commit$i" >> $txt_dir
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))
+            echo "执行了for循环,第 $i 次"
             git add .
-            git commit --amend --date="$git_date" -m "$git_date：commit$i"
-            sleep 8s
+            sleep 5s
+            git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count))：commit$i"
+            sleep 5s
+            git pull 
+            sleep 5s
             git push origin master
-            sleep 8s
+            sleep 5s
           done
 
           start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400)
