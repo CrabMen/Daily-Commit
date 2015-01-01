@@ -35,7 +35,7 @@ cm_readAction(){
 
     read -p "请输入最大随机数：" commit_count
 
-    echo -e "\n\n**********\n输入的起始日期：$start_date\n输入的截止日期：$end_date\n输入的最大随机数：$commit_counnt\n**********\n\n"
+    echo -e "\n\n**********\n输入的起始日期：$start_date\n输入的截止日期：$end_date\n输入的最大随机数：$commit_count\n**********\n\n"
 
     start_date_en=$(env LANG=en_US.UTF-8 gdate -d "$start_date")
 
