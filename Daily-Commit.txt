@@ -41,3 +41,4 @@ Sun Feb  1 08:00:00 CST 2015：commit2
 Thu Jan  1 12:00:00 CST 2015：commit0
 =======
 >>>>>>> ace8b5ace5a474056f1aaf5f7c6f4d2f4e08caf0
+Fri Jan  2 00:00:00 CST 2015：commit0
