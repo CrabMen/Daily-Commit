@@ -1,2 +1,4 @@
-Thu Jan  1 00:00:00 CST 2015：commit0
-Thu Jan  1 00:00:00 CST 2015：commit1
+
+Fri Jan  2 00:00:00 CST 2015：commit0
+Fri Jan  2 00:00:00 CST 2015：commit1
+Fri Jan  2 00:00:00 CST 2015：commit2
