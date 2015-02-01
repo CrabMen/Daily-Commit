@@ -109,17 +109,23 @@ git_action() {
         #   git add .
         #   git commit -m "merge"
 
-          git pull 
+          git pull
+
+          sleep 8s
 
           random_commit_count=$(cm_randomInteger)
 
           for((i=0;i<$random_commit_count;i++)); do
             
             echo "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i" >> $txt_dir
+            sleep 4s
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)
             git add .
+            sleep 4s
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
+            sleep 4s
             start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400 / $random_commit_count)
+            sleep 4s
           done
           git pull 
           sleep 8s
