@@ -1,4 +1,1 @@
-<<<<<<< HEAD
-Tue Jan  6 00:00:00 CST 2015：commit0
-=======
->>>>>>> 0369599f57638a7cb79e5a4197667728b26d76ca
+Sun Feb  1 00:00:00 CST 2015：commit0
