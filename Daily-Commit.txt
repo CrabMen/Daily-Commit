@@ -1,8 +1,2 @@
-<<<<<<< HEAD
-Sat Jan  3 00:00:00 CST 2015：commit0
-Sat Jan  3 12:00:00 CST 2015：commit1
 Sun Feb  1 00:00:00 CST 2015：commit0
-=======
->>>>>>> af8b001443d8cc7dc03976ce3f3460d03a839aa3
-Mon Feb  2 00:00:00 CST 2015：commit0
-Sun Feb  1 00:00:00 CST 2015：commit0
+Sun Feb  1 00:00:00 CST 2015：commit1
