@@ -125,6 +125,7 @@ git_action() {
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
             sleep 4s
             start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400 / $random_commit_count)
+
             sleep 4s
           done
           git pull 
