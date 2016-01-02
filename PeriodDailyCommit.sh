@@ -120,13 +120,13 @@ git_action() {
             echo "$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))：commit$i" >> $txt_dir
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))
             git add .
-            git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))：commit$i"
+            git commit --amend --date="$git_date" -m "$git_date：commit$i"
 
           done
 
           start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400)
           git pull 
-          sleep 8s
+          sleep 4s
           git push origin master 
           sleep 8s
         #   start_date_timestamp="$start_date_timestamp"
