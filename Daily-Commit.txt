@@ -91,5 +91,10 @@ Mon Feb  8 00:00:00 CST 2016：commit1
 >>>>>>> b2a2c33ffffbf57853eda9eca31ac40eecb8ddc5
 Tue Feb  9 00:00:00 CST 2016：commit1
 Tue Feb  9 00:00:00 CST 2016：commit2
+<<<<<<< HEAD
 Wed Feb 10 00:00:00 CST 2016：commit1
 Wed Feb 10 00:00:00 CST 2016：commit2
+=======
+>>>>>>> 13908d2d10b04e83fec5d4d6058f339942b1f770
+Thu Feb 11 00:00:00 CST 2016：commit1
+Thu Feb 11 00:00:00 CST 2016：commit2
