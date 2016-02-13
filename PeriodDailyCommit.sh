@@ -55,7 +55,7 @@ cm_readAction(){
 
 #生成随机字符串
 cm_randomInteger() {
-    min=1
+    min=0
     max=$commit_count
     random_integer=$((min + RANDOM % $((max-min))))
     echo $random_integer
@@ -106,22 +106,23 @@ git_action() {
     echo "\n$start_date_timestamp_count\n$end_date_timestamp_count"
  
     while [ $start_date_timestamp_count -le $end_date_timestamp_count ]; do
-          git add .
-          git commit -m "merge"
+        #   git add .
+        #   git commit -m "merge"
           git pull origin master
 
 
           random_commit_count=$(cm_randomInteger)
 
-          for((i=1;i<$random_commit_count;i++)); do
+          for((i=0;i<$random_commit_count;i++)); do
             echo "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i" >> $txt_dir
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)
             git add .
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
-            sleep 8s
+           
           done
 
           git pull origin master
+          sleep 8s
           git push origin master 
           sleep 8s
          
