@@ -122,9 +122,9 @@ git_action() {
           done
 
           git pull origin master
-          sleep 5s
+          sleep 7s
           git push origin master 
-          sleep 5s
+          sleep 7s
          
 
           start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400)
