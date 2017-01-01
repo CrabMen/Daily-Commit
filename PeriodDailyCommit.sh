@@ -109,7 +109,9 @@ git_action() {
         #   git add .
         #   git commit -m "merge"
 
-          git pull 
+          git pull
+
+          sleep 8s
 
           random_commit_count=$(cm_randomInteger)
 
@@ -120,6 +122,7 @@ git_action() {
             git add .
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
             start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400 / $random_commit_count)
+            sleep 8s
           done
           git pull 
           sleep 8s
