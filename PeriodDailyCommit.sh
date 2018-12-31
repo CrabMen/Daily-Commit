@@ -123,9 +123,7 @@ git_action() {
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count + 86400 / $random_commit_count))
             echo "执行了for循环,第 $i 次"
             git add .
-            sleep 5s
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$(expr $start_date_timestamp_count))：commit$i"
-            sleep 5s
             # git pull origin master
             # sleep 5s
             git push -u origin master -f 
