@@ -1,3 +1,5 @@
 commit
 commit
 commit
+commit
+cd /Users/zhijieios/CMProject/Daily-Commit
