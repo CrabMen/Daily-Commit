@@ -20,3 +20,4 @@ cd /Users/zhijieios/CMProject/Daily-Commit
 commit
 cd /Users/zhijieios/CMProject/Daily-Commit
 commit
+commit
