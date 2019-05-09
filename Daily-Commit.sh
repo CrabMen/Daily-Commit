@@ -2,9 +2,11 @@
 
 current_path=$(dirname $0)
 
-cd ./${work_path}
+cd ${current_path}
 
 current_path=$(pwd)
+
+
 
 echo "当前shell所在的文件路径：$current_path"
 
@@ -15,6 +17,11 @@ echo "当前Daily-Commit.txt所在的文件路径：$txt_dir"
 echo "commit" >> $txt_dir
 
 cd $current_path
+
+git_path=$(which git)
+
+export PATH=$PATH:$(git_path)
+
 
 git add .
 
