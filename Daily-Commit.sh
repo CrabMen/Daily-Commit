@@ -18,11 +18,6 @@ echo "commit" >> $txt_dir
 
 cd $current_path
 
-#git_path=$(which git)
-
-#export PATH=$PATH:$(git_path)
-
-
 git add .
 
 git commit -m "no commit message"
