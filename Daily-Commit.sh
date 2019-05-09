@@ -18,9 +18,9 @@ echo "commit" >> $txt_dir
 
 cd $current_path
 
-git_path=$(which git)
+#git_path=$(which git)
 
-export PATH=$PATH:$(git_path)
+#export PATH=$PATH:$(git_path)
 
 
 git add .
