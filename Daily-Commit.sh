@@ -21,6 +21,7 @@ cd $current_path
 git config user.email "tobecrabman@163.com"
 git config user.name "CrabMan"
 
+
 git add .
 
 git commit -m "no commit message"
