@@ -18,7 +18,9 @@ echo "commit" >> $txt_dir
 
 cd $current_path
 
+remote_path=$(git remote)
 
+echo "$remote_path"
 
 git add .
 
