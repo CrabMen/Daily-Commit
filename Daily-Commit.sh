@@ -18,9 +18,6 @@ echo "commit" >> $txt_dir
 
 cd $current_path
 
-remote_path=$(git remote)
-
-echo "远程仓库地址为：$remote_path"
 
 git add .
 
