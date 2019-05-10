@@ -6,8 +6,6 @@ cd ${current_path}
 
 current_path=$(pwd)
 
-
-
 echo "当前shell所在的文件路径：$current_path"
 
 txt_dir="$current_path"/Daily-Commit.txt
@@ -18,6 +16,7 @@ echo "commit" >> $txt_dir
 
 cd $current_path
 
+git pull 
 
 git add .
 
