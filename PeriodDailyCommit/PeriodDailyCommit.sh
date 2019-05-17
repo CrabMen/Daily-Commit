@@ -17,11 +17,15 @@
 #cd $current_path
 
 #使用正则过滤年月日判断正确
-read -p "请输入起始日期（例如20160927）：" start_date
+#read -p "请输入起始日期（例如20160927）：" start_date
+#
+#echo "您输入的其实日期为 $start_date"
+#
+#read -p "请输入截止日期（例如20160927）：" end_date
+#
+#echo "请输入的截止日期为 $end_date"
 
-echo "您输入的其实日期为 $start_date"
 
-read -p "请输入截止日期（例如20160927）：" end_date
 
-echo "请输入的截止日期为 $end_date"
-
+date_en=$(env LANG=en_US.UTF-8 gdate -d )
+echo "当前的英文日期为：$date_en"
