@@ -118,9 +118,7 @@ git_action() {
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)
             git add .
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
-            sleep 5s
           done
-
 
           git pull origin master
           sleep 10s
