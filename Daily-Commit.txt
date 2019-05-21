@@ -23,4 +23,7 @@ Thu Jan  7 00:00:00 CST 2016：commit1
 >>>>>>> fb3ff89c3411a26bc144039fd954173debbf97f0
 Fri Jan  8 00:00:00 CST 2016：commit1
 Fri Jan  8 00:00:00 CST 2016：commit2
+<<<<<<< HEAD
 Sun Jan 10 00:00:00 CST 2016：commit1
+=======
+>>>>>>> 4601e21fc6eecb47100aee788188a05e384a2cf9
