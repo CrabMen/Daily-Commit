@@ -120,12 +120,10 @@ git_action() {
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
           done
 
-          git pull origin master
+          git pull 
           sleep 10s
           git push origin master 
           sleep 10s
-         
-
           start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400)
         #   start_date_timestamp="$start_date_timestamp"
           
