@@ -3,6 +3,12 @@ Thu Jan  1 06:00:00 CST 2015：commit1
 Thu Jan  1 06:00:00 CST 2015：commit2
 Thu Jan  1 06:00:00 CST 2015：commit3
 Thu Jan  1 06:00:00 CST 2015：commit0
+<<<<<<< HEAD
 Thu Jan  1 06:00:00 CST 2015：commit1
 Thu Jan  1 06:00:00 CST 2015：commit2
 Thu Jan  1 06:00:00 CST 2015：commit3
+=======
+>>>>>>> 131a69164b41437511bd075e54a25513e6f8db93
+Fri Jan  2 12:00:00 CST 2015：commit0
+Fri Jan  2 12:00:00 CST 2015：commit1
+Sat Jan  3 08:00:00 CST 2015：commit0

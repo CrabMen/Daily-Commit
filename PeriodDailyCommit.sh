@@ -128,7 +128,7 @@ git_action() {
             sleep 5s
             # git pull origin master
             # sleep 5s
-            git push origin master
+            git push -u origin master -f 
             sleep 5s
           done
 
