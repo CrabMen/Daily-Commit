@@ -3,4 +3,7 @@ Mon Dec 28 00:00:00 CST 2015：commit1
 Mon Dec 28 00:00:00 CST 2015：commit2
 =======
 >>>>>>> 23a3a8e059481fc1860faf095288fba164a8e765
+<<<<<<< HEAD
 Thu Dec 31 00:00:00 CST 2015：commit1
+=======
+>>>>>>> 29d76c19b7c5b72fb15005724118352897cb06df
