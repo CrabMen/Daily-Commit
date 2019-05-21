@@ -113,13 +113,13 @@ git_action() {
           random_commit_count=$(cm_randomInteger)
 
           for((i=0;i<$random_commit_count;i++)); do
-            
+            flock -e 
             echo "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i" >> $txt_dir
             git_date=$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)
             git add .
             git commit --amend --date="$git_date" -m "$(env LANG=en_US.UTF-8 gdate -d @$start_date_timestamp_count)：commit$i"
             start_date_timestamp_count=$(expr $start_date_timestamp_count + 86400 / $random_commit_count)
-        
+            flock -u 
           done
 
           wait
