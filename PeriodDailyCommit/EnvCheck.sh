@@ -25,16 +25,40 @@
 #
 #echo "请输入的截止日期为 $end_date"
 
+cm_echoWithHighlightedColor() {
+    echo -e "\033[31m $1 \033[0m"
+}
 # cm_gdateInstalledCheck() {
-    gdate_dir=`which gdate`
-    echo "当前gdate的安装路径：$gdate_dir"
-    
-    
-    
-    
-    
-    gdate_dir_all_files=`ls -al $gdate_dir`
-    echo "当前gdate的安装路径下的所有文件：$gdate_dir_all_files"
+    # gdate_dir=`which gdate`    
+    # if [ -f "$gdate_dir" ]; then
+    #     echo "gdate is installed，you can use the 'gdate' command now"
 
+    # else
+
+    #     brew_dir=`which brew`   
+
+    #     if [ -f "$brew_dir" ]; then
+    #         echo "homebrew is installed , but the coreutils is not installed, trying to install coreutils..."
+    #         brew install coreutils || exit 1   
+
+    #         echo "Commands also provided by macOS have been installed with the prefix "g".If you need to use these commands with their normal names, youcan add a "gnubin" directory to your PATH from your bashrc like:"  
+    #         path_dir="PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH""
+    #         cm_echoWithHighlightedColoe $path_dir
+
+    #         exit 1
+    #     else
+
+    #         echo "homebrew is not installed ,trying to install homebrew"
+    #         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    #     fi
+
+    # fi
+
+
+ path_dir="PATH="/usr/local/opt/coreutils/libexec/gnubin:\$PATH""
+ cm_echoWithHighlightedColor $path_dir
 
 # }
+
+
