@@ -37,4 +37,7 @@ Fri Jan 15 00:00:00 CST 2016：commit2
 =======
 >>>>>>> 97d01df858a40fcddc46b0bd913c8fd432a344d7
 Sat Jan 16 00:00:00 CST 2016：commit1
+<<<<<<< HEAD
 Sun Jan 17 00:00:00 CST 2016：commit1
+=======
+>>>>>>> e65c85034b178d175a01ad53387e2a15d976ebf3
